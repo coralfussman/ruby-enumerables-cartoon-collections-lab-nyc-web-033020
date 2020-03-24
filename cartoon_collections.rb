@@ -6,6 +6,12 @@ dwarves.each_with_index do | item, index |
 end
 
 def summon_captain_planet(planeteer_calls)
+  planeteer_calls.collect do |call|
+     call.capitalize + "!"
+   end
+end
+
+def long_planeteer_calls(long_calls)
   answer = false
 long_calls.each do |call|
   if call.length > 4
@@ -13,10 +19,6 @@ long_calls.each do |call|
   end
 end
   answer
-end
-
-def long_planeteer_calls# code an argument here
-  # Your code here
 end
 
 def find_the_cheese# code an argument here
